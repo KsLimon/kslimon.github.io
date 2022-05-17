@@ -19,16 +19,21 @@
 
 /*===== Colores =====*/
 :root{
-  --first-color: #333D79FF;
-  --second-color: rgba(248, 222, 229, 0.637);
+  /* --first-color: rgb(66, 204, 54); */
+  --first-color: rgb(61, 76, 160);
+  /* --second-color: rgb(66, 204, 54); */
+  /* --first-color: #333D79FF; */
+  --second-color: rgba(248, 192, 207, 0.671);
+  /* --second-color: rgba(248, 222, 229, 0.637); */
 }
 
 /*===== Fuente y tipografia =====*/
 :root{
+  /* --body-font: 'Monaco', Monospace; */
   --body-font: 'Poppins', sans-serif;
-  --big-font-size: 2rem;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: 0.938rem;
+  --big-font-size: 3rem;
+  --h2-font-size: 2rem;
+  --normal-font-size: 1.5rem;
 }
 @media screen and (min-width: 768px){
   :root{
@@ -69,6 +74,7 @@ body{
   font-size: var(--normal-font-size);
   color: var(--second-color);
   background-color: black;
+  background-image:url("assets/img/work7.jpg") ;
 }
 h1,h2,p{
   margin: 0;
@@ -104,7 +110,7 @@ img{
   left: 0;
   right: 0;
   margin: auto;
-  top: 2rem;
+  top: 3rem;
   background-color: var(--first-color);
 }
 .section{
@@ -114,6 +120,15 @@ img{
 
 /*===== LAYOUT =====*/
 .bd-grid{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+.new-grid{
   max-width: 1024px;
   display: grid;
   grid-template-columns: 100%;
@@ -478,16 +493,18 @@ img{
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Ks Limon</a>
+                    <a href="#" class="nav__logo"><i class='bx bx-home-smile'></i></a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                        <!-- <li class="nav__item"><a href="#home" class="nav__link active"><i class='bx bx-home-smile'></i></a></li> -->
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Education & Skills</a></li>
+                        <li class="nav__item"><a href="#research" class="nav__link">Research</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Certificates</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link"><i class='bx bxs-contact'></i></a></li>
                     </ul>
                 </div>
 
@@ -530,8 +547,7 @@ img{
                         <h2 class="about__subtitle">I'am Md Kamrus Samad</h2>
                         <p class="about__text">As a lifelong learner, I’m constantly expanding my skill set through
                           professional and personal experiences. I believe that I have strong
-                          communication and problem-solving skills. Looking for a position
-                          with a highly regarded organization.</p>           
+                          communication and problem-solving skills.</p>           
                     </div>                                   
                 </div>
 
@@ -546,21 +562,21 @@ img{
                   <div class="skills__img">
                     <h1>Education </h1><br>
                    <p class="education__data">
-                     <span > <h4>BS in Computer Science and Engineering</h4> </span> <br>
+                     <span > <h3>BS in Computer Science and Engineering</h3> </span> <br>
                      <span > North South University, Dhaka, Bangladesh </span> <br>
                      <span > January 2018 - May 2022 </span> <br>
-                     <span > CGPA : <span class="font-italic"> 2.75 </span></span> out of 4.00 <br>
+                     <span > CGPA : <span class="font-italic"> 2.75 </span></span> (80 percent)<br>
                    </p>
                    
                    <p class="education__data">
-                     <span ><h4> Higher Secondary School Certificate (HSC) </h4></span> <br>
+                     <span ><h3> Higher Secondary School Certificate (HSC) </h3></span> <br>
                      <span > Rajbari college, Nachole, Chapai Nawabganj, Bangladesh </span> <br>
                      <span > March 2015 - April 2017 </span> <br>
                      <span > GPA : <span class="font-italic"> 4.33 </span></span> out of 5.00 <br>
                    </p>
                        
                    <p class="education__data">
-                     <span ><h4> Secondary School Certificate (SSC) </h4></span> <br>
+                     <span ><h3> Secondary School Certificate (SSC) </h3></span> <br>
                      <span > Kaliganj I. M. High School, Shibganj, Chapai Nawabganj, Bangladesh </span> <br>
                      <span > March 2010 - 2015 </span> <br>
                      <span > GPA : <span class="font-italic"> 5.00 </span></span> out of 5.00 <br>
@@ -569,31 +585,95 @@ img{
            
                                        </div>
                     <div>
-                        <h2 class="skills__subtitle">Skills</h2><br>
+                        <h2 class="skills__subtitle">Technical Skills</h2><br>
                         <div class="skills__data">
                             <div class="skills__names">
-                                <span class="skills__name">Languages: <h5>Python, C++, Dart, C#</h5></span>
+                                <span class="skills__name"><h3>Languages:</h3> Python, Java, C, C++, C#, Dart, HTML, CSS</span>
                             </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
-                              <span class="skills__name">Frameworks: <h5>Django, Flutter</h5></span>
+                              <span class="skills__name"><h3>Libraries and Frameworks:</h3> Transformers, PyTorch, TensorFlow, Keras, scikit-learn , Pandas, Matplotlib,
+                                OpenCV, Flutter, Django, .NET</span>
                             </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
-                              <span class="skills__name">Others: <h5>MySql, Sql, Data Science</h5></span>
+                              <span class="skills__name"><h3>Database:</h3> MySql, Sql, Firebase</span>
                             </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
-                              <span class="skills__name">Os: <h5>Linux, Windows</h5></span>
+                              <span class="skills__name"><h3>Os & Technologies:</h3> Windows, Linux, Git, GitHub, BitBucket, Trello</span>
                             </div>
                         </div>
                     </div>
                     
                 </div>
             </section>
+
+            <!--===== Research =====-->
+            <section id="research">
+              <h2 class="section-title">Research</h2>
+
+              <div class=" bd-grid">
+              <h1 class="about__subtitle">1. Training Pruned Language Model.  |<font size="2"><i>Senior Design and Directed Research</i></font> </h1>
+            <p class="about__text">It is a collaborative NLP research. It’s still under processing. And we assume that after we finish our research,
+              we will be able to present a Language model that is significantly greener, resource-saving, and comparatively
+              smaller.
+              </p>
+            </div>
+            <br>
+            <div class=" bd-grid">
+              <h1 class="about__subtitle">2. A new task for Bengali Language Classification.  |<font size="2"><i>NLP</i></font> </h1>
+            <p class="about__text">It is also a collaborative NLP research. And it’s also under processing. We assume that after we finish our
+              work, we will be able to to present a new classification task for Bengali Language. And hopefully, we will
+              present a dataset and comparison among some acknowledged models.
+              </p>
+            </div>
+                </section>
+
+          <!--===== Projects =====-->
+          <section id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class=" bd-grid">
+              <a href="https://github.com/KsLimon/Faculty-Reviewer-For-NSUers" class="home__social-icon"><h1 class="about__subtitle" >1. Faculty Reviewer <i class='bx bx-link-external' ></i></a>|<font size="2"><i>JUNIOR DESIGN </i></font> </h1>
+            <p class="about__text">It was a windows application. The idea of this application was making NSU faculty member’s profile based on
+              student review. NSU is an open credit hour course system university so every semester student needs to search
+              their faculty who is appropriate for him and his course. So, in this app student can rate and comment about
+              teacher based on their experience which makes easier to find the faculty.
+              </p>
+              <p class="about__text"> • This application also has an <a href="https://github.com/KsLimon/Faculty_reviewer_Mobile_App" class="home__social-icon"> Android Version<i class='bx bx-link-external' ></i></a></p>
+            </div>
+            <br>
+            <div class=" bd-grid">
+              <a href="https://github.com/KsLimon/Document_Digitization" class="home__social-icon">
+                <h1 class="about__subtitle" >2. Document Digitization <i class='bx bx-link-external' ></i></a>|<font size="2"><i>SOFTWARE ENGINEERING </i></font> </h1>
+            <p class="about__text">It was a web application. The idea of this application was to automate the document of any organization.
+              Document storing, sharing, reading, searching was the key work of that application. OCR search for
+              documentation was one of the key goals of implementation.              
+              </p>
+            </div>
+            <br>
+            <div class=" bd-grid">
+              <a href="https://github.com/KsLimon/Real_fake_face_detection-DFD-" class="home__social-icon">
+                <h1 class="about__subtitle" >3. Real fake face detection (DFD) <i class='bx bx-link-external' ></i></a>|<font size="2"><i>DEEP LEARNING </i></font> </h1>
+            <p class="about__text">It was a very basic deep learning project created by myself. Basically, the goal was building a Convolutional
+              Neural Networks (CNN) for image classification. So it was a deep fake detection project and the dataset was
+              collected from Kaggle.            
+              </p>
+            </div>
+            <br>
+            <br>
+            <div class=" bd-grid">
+              <a href="#projects" class="home__social-icon">
+                <h1 class="about__subtitle" >4. Student Management System <i class='bx bx-link-external' ></i></a>|<font size="2"><i>Objected Oriented Programming </i></font> </h1>
+            <p class="about__text">A java application using Graphical user interface along with object oriented programming where I tried to
+              implement exception handling, inheritance, polymorphism and some other functionality.
+              </p>
+            </div>
+        </section>
 
             <!--===== WORK =====-->
             <section class="work__section" id="work">
@@ -622,6 +702,23 @@ img{
                     </div>
                 </div>
             </section>
+
+            <section id="vol">
+              <h2 class="section-title">Volunteer Experience</h2>
+              <div class="skills__container bd-grid">
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <span class="skills__name"><h3>NSU ACM Student Chapter </h3> <i>General Member - Team Provision</i></span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                      <span class="skills__name"><h3>Art & Photography Club - <i>NSUAPC</i></h3> <i>General Member</i></span>
+                    </div>
+                </div>
+            </div>
+              
+          </section>
 
             <!--===== CONTACT =====-->
             <section class="skills_section" id="contact">

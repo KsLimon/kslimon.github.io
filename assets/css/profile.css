@@ -203,24 +203,30 @@ img{
 .home{
   height: calc(100vh - 3rem);
   row-gap: .8rem;
+  text-align: center;
 }
 .home__data{
   align-self: center;
+  order: 2;
 }
 .home__title{
   font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
+  margin-bottom: var(--mb-2);
 }
 .home__title-color{
   color: var(--first-color);
 }
 .home__social{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  order: 3;
 }
 .home__social-icon{
   width: max-content;
-  margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
 }
@@ -228,12 +234,15 @@ img{
   color: var(--first-color);
 }
 .home__img{
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  display: block;
+  order: 1;
+  width: clamp(150px, 40vw, 200px);
+  margin: 0 auto;
 }
 
 .home__img img {
+    width: 100%;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0px 10px 10px 0px rgba(51, 83, 87, 0.8);
@@ -247,6 +256,13 @@ img{
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
+}
+.home__button--desktop{
+  display: none;
+}
+.home__button--mobile{
+  display: inline-block;
+}
 }
 .button:hover{
   box-shadow: 0 10px 36px rgba(255, 255, 255, 0.15);
@@ -428,23 +444,40 @@ img{
 
   .home{
     height: 100vh;
+    padding-top: clamp(2rem, 5vh, 6rem);
+    text-align: left;
   }
   .home__data{
     align-self: flex-end;
+    order: unset;
+  }
+  .home__button--desktop{
+    display: inline-block;
+  }
+  .home__button--mobile{
+    display: none;
   }
   .home__social{
     padding-top: 0;
     padding-bottom: 2.5rem;
     flex-direction: row;
     align-self: flex-end;
+    justify-content: flex-start;
+    gap: 0;
+    order: unset;
   }
   .home__social-icon{
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
   .home__img{
-    width: 457px;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    width: clamp(250px, 30vw, 457px);
     bottom: 15%;
+    order: unset;
   }
 
   .about__container, .skills__container{
@@ -474,6 +507,7 @@ img{
     margin-right: auto;
   }
   .home__img{
+    width: clamp(350px, 25vw, 457px);
     right: 10%;
   }
 }

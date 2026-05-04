@@ -263,7 +263,7 @@ img{
 .home__button--mobile{
   display: inline-block;
 }
-}
+
 .button:hover{
   box-shadow: 0 10px 36px rgba(255, 255, 255, 0.15);
 }

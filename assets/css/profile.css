@@ -62,7 +62,9 @@ body{
   font-size: var(--normal-font-size);
   color: var(--second-color);
   background-color: black;
-  background-image:url("assets/img/work7.jpg") ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../img/work7.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 h1,h2,p{
   margin: 0;

@@ -71,10 +71,26 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Md Kamrus Samad</h2>
-                        <p class="about__text">Software Engineer with more than 3 years of hands-on experience in .NET Core, focused on web-based applications.
-                          Proven success in delivering scalable systems like Judicio and AI-driven complaint handling bots.
-                          Passionate about building impactful software through efficient problem-solving and deep expertise in modern development technologies.</p>           
+                        <h2 class="about__subtitle">Md Kamrus Samad (Ks Limon)</h2>
+                        <h3>Software Engineer | AI &amp; .NET Specialist</h3>
+                        <div class="education__data">
+                          <span>Results-driven software engineer with expertise in enterprise-grade application development using .NET (Blazor, ASP.NET Core), Microsoft SQL Server, Azure, and AI integration.</span>
+                        </div>
+                        <div class="education__data">
+                          <span>Skilled in architecting scalable systems with Clean Architecture, CI/CD pipelines, Redis caching, and secure, high-performance APIs.</span>
+                        </div>
+                        <div class="education__data">
+                          <span>Experienced in AI agent development using LangChain, FastAPI, and OpenAI — building intelligent systems that automate workflows and enhance productivity.</span>
+                        </div>
+                        <div class="education__data">
+                          <span>Passionate about solving complex problems, driving innovation, and delivering clean, maintainable code that scales.</span>
+                        </div>
+                        <div class="education__data">
+                          <span>Currently focused on cross-platform app deployment, edge-ready solutions, and AI with modern architecture.</span>
+                        </div>
+                        <div class="education__data">
+                          <span>Open to consulting, remote opportunities, and strategic partnerships.</span>
+                        </div>
                     </div>                                   
                 </div>
 
@@ -88,26 +104,25 @@
                 <div class="skills__container bd-grid">          
                   <div class="skills__img">
                     <h1>Education </h1><br>
-                   <p class="education__data">
-                     <span > <h3>BSc - Computer Science and Engineering</h3> </span> <br>
-                     <span > North South University, Dhaka, Bangladesh </span> <br>
-                     <span > January 2018 - May 2022 </span> <br>
-                   </p>
+                   <div class="education__data">
+                     <h3>BSc - Computer Science and Engineering</h3>
+                     <span>North South University, Dhaka</span><br>
+                     <span>January 2018 - May 2022</span>
+                   </div>
                    
-                   <p class="education__data">
-                     <span ><h3> Higher Secondary School Certificate (HSC) </h3></span> <br>
-                     <span > Rajbari college, Nachole, Chapai Nawabganj, Bangladesh </span> <br>
-                     <span > March 2015 - April 2017 </span> <br>
-                     <span > GPA : <span class="font-italic"> 4.33 </span></span> out of 5.00 <br>
-                   </p>
+                   <div class="education__data">
+                     <h3>Higher Secondary School Certificate (HSC)</h3>
+                     <span>Rajbari college, Nachole, Chapai Nawabganj</span><br>
+                     <span>March 2015 - April 2017</span><br>
+                     <span>GPA: <span class="font-italic">4.33</span> out of 5.00</span>
+                   </div>
                        
-                   <p class="education__data">
-                     <span ><h3> Secondary School Certificate (SSC) </h3></span> <br>
-                     <span > Kaliganj I. M. High School, Shibganj, Chapai Nawabganj, Bangladesh </span> <br>
-                     <span > March 2010 - 2015 </span> <br>
-                     <span > GPA : <span class="font-italic"> 5.00 </span></span> out of 5.00 <br>
-                   </p>
-                   <p class="education__data"></p>
+                   <div class="education__data">
+                     <h3>Secondary School Certificate (SSC)</h3>
+                     <span>Kaliganj I. M. High School, Shibganj, Chapai Nawabganj</span><br>
+                     <span>March 2010 - 2015</span><br>
+                     <span>GPA: <span class="font-italic">5.00</span> out of 5.00</span>
+                   </div>
            
                                        </div>
                     <div>
@@ -384,34 +399,38 @@
             
             /*===== SCROLL REVEAL ANIMATION =====*/
             const sr = ScrollReveal({
-                origin: 'left',
-                distance: '80px',
-                duration: 2000,
-                // reset: true
+                origin: 'bottom',
+                distance: '40px',
+                duration: 1200,
+                easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
             });
             
             /*SCROLL HOME*/
-            sr.reveal('.home__title',{}); 
-            sr.reveal('.button',{delay: 1}); 
-            sr.reveal('.home__img',{delay: 1}); 
-            sr.reveal('.home__social-icon',{ interval: 1}); 
+            sr.reveal('.home__title', { origin: 'left', distance: '60px' }); 
+            sr.reveal('.button', { delay: 200, origin: 'left' }); 
+            sr.reveal('.home__img', { delay: 300, origin: 'right', distance: '60px' }); 
+            sr.reveal('.home__social-icon', { interval: 100, origin: 'bottom' }); 
             
             /*SCROLL ABOUT*/
-            sr.reveal('.about__img',{}); 
-            sr.reveal('.about__subtitle',{delay: 1}); 
-            sr.reveal('.about__text',{delay: 1}); 
+            sr.reveal('.about__img', { origin: 'left' }); 
+            sr.reveal('.about__subtitle', { delay: 200 }); 
+            sr.reveal('.about__text', { delay: 300 }); 
             
             /*SCROLL SKILLS*/
-            sr.reveal('.skills__subtitle',{}); 
-            sr.reveal('.skills__text',{}); 
-            sr.reveal('.skills__data',{interval: 1}); 
-            sr.reveal('.skills__img',{delay: 1});
+            sr.reveal('.skills__subtitle', {}); 
+            sr.reveal('.skills__text', {}); 
+            sr.reveal('.skills__data', { interval: 80, origin: 'left', distance: '30px' }); 
+            sr.reveal('.skills__img', { delay: 200 });
+            sr.reveal('.education__data', { interval: 100, origin: 'left', distance: '30px' });
+            
+            /*SCROLL EXPERIENCE & SECTIONS*/
+            sr.reveal('.section-title', { origin: 'top', distance: '20px' });
             
             /*SCROLL WORK*/
-            sr.reveal('.work__img',{interval: 1}); 
+            sr.reveal('.work__img', { interval: 150 }); 
             
             /*SCROLL CONTACT*/
-            sr.reveal('.contact__input',{interval: 1}); 
+            sr.reveal('.contact__input', { interval: 100 }); 
             
             
             

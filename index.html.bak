@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Astro description">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="./assets/img/ic3.png">
+    <link rel="stylesheet" href="./assets/css/css2">
+    <link rel="stylesheet" href="./assets/css/css2(1)">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="generator" content="Astro v4.0.8">
+    <title>Md Kamrus Samad_</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./assets/css/css2(2)" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/portfolio.6uLvkIvL.css">
+    <link rel="stylesheet" href="./assets/css/mainNameCSS.css">
+
+<style>
+html{font-family:JetBrains Mono,system-ui,sans-serif}
+</style>
+</head> 
+<body class="bg-[#1A2022]">  
+    <main class="px-8 md:px-24 py-2 text-white text-lg"> 
+        <div class="project-section-outer">
+            <div class="project-section-inner">
+              <div class="project-section-title">Md Kamrus Samad</div>
+            </div>
+        </div>
+          
+        <div class="md:w-[80%] xl:w-[60%] my-2"> 
+            <div class="w-full"> 
+                <b style="color: rgba(182, 71, 163, 0.8);">◘</b><b class="font-bold"> ABOUT</b> 
+                <p class="pl-8 text-[#BBBBBB]">
+                    Software Engineer with more than 3 years of hands-on experience in .NET Core, focused on web-based applications. Proven success in delivering
+                    scalable systems like Judicio and AI-driven complaint handling bots. Passionate about building impactful software through efficient problem-solving
+                    and deep expertise in modern development technologies. <a href="./assets/img/Md Kamrus Samad.pdf" class="text-[#A855F7] hover:underline" target="_blank"> &#9244; Resume</a>
+                </p> 
+            </div>
+            <div class="w-full mt-8"> 
+                <b style="color: rgb(31, 99, 96);">◘</b><b class="font-bold"> CURRENT POSITION</b> 
+                <div class="pl-8"> 
+                    <p class="text-[#BBBBBB]"> Software Engineer II</p>
+                    <p class="text-[#BBBBBB]"> BJIT Group<small> - From 08/2025 To Present</small></p> 
+                    <p class="text-[#BBBBBB]"> Designing RESTful Web APIs using ASP.NET Core for secure, scalable integrations with third-party systems. 
+                        Building modular and reusable components using Blazor and Razor Pages, aligned with Clean Architecture and SOLID principles. 
+                        Applying CI/CD, Redis caching, TDD, and contributing to microservices architecture in Agile environments. 
+                        Creating and optimizing stored procedures and advanced SQL logic for large-scale data processing and analytics.
+                    </p>
+                    <a target="_blank" href="https://www.bjitgroup.com/" class="mt-4 text-[#A855F7] hover:underline">BJIT Group ➙</a> 
+                </div> 
+            </div>
+            <div class="w-full mt-8"> 
+                <b style="color: rgba(182, 71, 163, 0.8);">◘</b><b class="font-bold"> CONTACT</b> 
+                <div class="pl-8"> 
+                    <a href="mailto:kslimon41@gmail.com" class="text-[#A855F7] hover:underline" target="_blank">
+                        <i class='bx bxl-gmail'></i> kslimon41@gmail.com    
+                    </a>
+                    <br>
+                    <a href="https://wa.me/01709447040" class="text-[#A855F7] hover:underline" target="_blank">
+                        <i class='bx bxl-whatsapp'></i> +8801709447040
+                    </a>
+                <div class="project-section-social">
+                    <a href="https://www.linkedin.com/in/md-kamrus-samad-4363aa15b/" class="social-icon" target="_blank" style="color: rgba(182, 71, 163, 0.8);">
+                      <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://www.facebook.com/ks.limon.9" class="social-icon" target="_blank" style="color: rgb(31, 99, 96);">
+                      <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://github.com/KsLimon" class="social-icon" target="_blank" style="color: rgba(213, 175, 75, 0.8);">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.instagram.com/ks_limon/" class="social-icon" target="_blank" style="color: rgba(182, 71, 163, 0.8);">
+                        <i class='bx bxl-instagram'></i>
+                      </a>
+                  </div>
+                    <small class="text-[#BBBBBB]">
+                        5/7, Block G, Section 1, Mirpur, Dhaka - 1216, Bangladesh
+                    </small>
+            </div> 
+        </div> 
+<div class="w-full flex justify-center mt-12 xl:hidden"> 
+    <div class="py-4 px-6 bg-[#101415] w-[290px] flex flex-col space-y-2"> 
+        <img class="w-[262px] h-[275px]" alt="" src="./assets/img/perfil.png"> 
+        <a target="_blank" href="./Profile/index.html" class="bg-[#A855F7] text-white w-full py-3 text-center">VIEW PROFILE ➙</a> </div> </div> </div> 
+
+<div class="hidden xl:block fixed right-16 bottom-20"> 
+    <div class="py-4 px-6 bg-[#101415] w-[290px] flex flex-col space-y-2"> 
+        <img class="w-[262px] h-[275px]" alt="" src="./assets/img/perfil.png"> 
+        <a target="_blank" href="./Profile/index.html" class="bg-[#A855F7] text-white w-full py-3 text-center">VIEW PROFILE ➙</a> 
+    </div> 
+</div>
+</main>  
+</body>
+</html>
